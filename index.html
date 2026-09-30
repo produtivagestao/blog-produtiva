@@ -327,7 +327,22 @@ const WA=t=>"https://wa.me/5527999291352?text="+encodeURIComponent(t);
 const CATS={ia:"IA & Tecnologia",qual:"Qualidade & ISO",pessoas:"Pessoas",mercado:"Mercado & Economia",processos:"Processos"};
 
 const POSTS=[
-{slug:"ia-pequenos-negocios-52",cat:"ia",featured:true,date:"29 set 2026",read:5,big:"52%",bigl:"das PMEs já usam IA",
+{slug:"caged-agosto-2026-emprego",cat:"pessoas",featured:true,date:"30 set 2026",read:5,big:"−25,2%",bigl:"vagas formais no ano vs 2025",
+title:"O emprego formal desacelerou em 2026. Contratar deixou de ser a saída para crescer.",
+dek:"O Novo Caged de agosto veio acima do esperado, mas o acumulado do ano está 25% abaixo de 2025. No Espírito Santo, o saldo ficou negativo pelo terceiro mês seguido.",
+key:[["165,8 mil","vagas formais criadas no Brasil em agosto"],["−25,2%","saldo de jan-ago/2026 em relação a 2025"],["−287","saldo do Espírito Santo em agosto (3º mês negativo)"]],
+body:`<p>O Ministério do Trabalho e Emprego divulgou em 29 de setembro os dados do Novo Caged de agosto. O Brasil abriu <strong>165.827 vagas com carteira assinada</strong> no mês, 7,2% a mais que em agosto de 2025, com saldo positivo nos cinco grandes setores. O estoque de empregos formais chegou a 48,2 milhões de vínculos e o salário médio real de admissão ficou em R$ 2.410,74.</p>
+<p>O retrato do ano, porém, é de desaceleração. De janeiro a agosto foram criados 1.134.033 postos, contra 1.516.881 no mesmo período de 2025: uma queda de <strong>25,2%</strong>.</p>
+<p>No Espírito Santo, o saldo de agosto foi de <strong>−287 vagas</strong> (49.238 admissões e 49.525 desligamentos), o terceiro mês seguido no negativo, puxado pelo fim da safra de café na agropecuária (−1.497). A indústria também fechou o mês com saldo negativo (−376), enquanto comércio, construção e serviços ficaram no azul. No acumulado do ano, o estado ainda soma 21.403 vagas. Entre os municípios, o melhor resultado de agosto foi o de Cariacica (+636).</p>
+<h2>O que isso significa para a sua empresa</h2>
+<p>Quando o emprego formal cresce menos, as empresas também estão contratando com mais cautela. Juros altos e incerteza fazem o empresário segurar a folha. O resultado prático é conhecido: a mesma equipe precisa dar conta de mais demanda. Sem processo claro, isso vira sobrecarga, horas extras, retrabalho e rotatividade, que custa caro (recrutar e treinar de novo) e ainda pesa na gestão de riscos psicossociais exigida pela NR-1.</p>
+<p>Crescer sem aumentar a folha na mesma proporção não é mágica: é produtividade. E a produtividade de uma pequena ou média empresa está, quase sempre, escondida em tarefas sem dono, informação espalhada, reuniões sem decisão e controles manuais repetidos todos os dias.</p>
+<div class="insight"><div class="eyebrow">Leitura Produtiva</div><p>Antes de abrir uma vaga, vale perguntar: essa demanda precisa de mais uma pessoa ou de um processo melhor? Na Produtiva, mapeamos a rotina, eliminamos o desperdício e colocamos agentes de IA para executar o trabalho repetitivo 24 horas por dia (follow-ups, cobrança de planos de ação, atualização de indicadores). Assim, a equipe que você já tem fica livre para o que exige gente.</p></div>
+<h2>Checklist da semana</h2>
+<ul class="check"><li>Liste as vagas que você pretende abrir nos próximos 6 meses e o motivo de cada uma.</li><li>Para cada vaga, identifique quais tarefas são repetitivas e poderiam ser padronizadas ou automatizadas.</li><li>Meça a hora extra e o retrabalho dos últimos 3 meses por área.</li><li>Converse com a equipe sobre onde está a sobrecarga (isso também alimenta o PGR da NR-1).</li></ul>`,
+sources:[["Ministério do Trabalho e Emprego: Novo Caged de agosto de 2026 (29/09/2026)","https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2026/setembro/novo-caged-emprego-formal-gera-165-8-mil-vagas-em-agosto-e-acumula-1-13-milhao-de-postos-no-ano"],["Agência Brasil: Brasil cria 165,8 mil postos de trabalho em agosto, aponta Caged (29/09/2026)","https://agenciabrasil.ebc.com.br/economia/noticia/2026-09/brasil-cria-1658-mil-postos-de-trabalho-em-agosto-aponta-caged"],["A Gazeta: ES melhora na geração de empregos, mas saldo fica negativo pelo 3º mês seguido","https://www.agazeta.com.br/es/economia/es-melhora-na-geracao-de-empregos-mas-saldo-fica-negativo-pelo-3-mes-seguido-0926"]]},
+
+{slug:"ia-pequenos-negocios-52",cat:"ia",date:"29 set 2026",read:5,big:"52%",bigl:"das PMEs já usam IA",
 title:"Metade dos pequenos negócios já usa IA. O problema agora é outro.",
 dek:"Pesquisa do Sebrae mostra que o Brasil adota IA mais rápido que os EUA. Mas usar a ferramenta não é o mesmo que mudar o resultado da empresa.",
 key:[["52%","usaram IA nas duas semanas anteriores à pesquisa"],["60%","pretendem adotar ou ampliar o uso no semestre"],["38%","dos que não usam dizem não saber o que a IA faz"]],
@@ -433,13 +448,13 @@ function renderHome(){
   $("#featured").innerHTML=`<button class="featured" data-slug="${f.slug}">
     <div class="art"><svg viewBox="0 0 300 200" width="100%" style="max-width:360px" aria-hidden="true">
       <g fill="none" stroke="rgba(255,255,255,.14)"><line x1="20" y1="170" x2="280" y2="170"/><line x1="20" y1="120" x2="280" y2="120"/><line x1="20" y1="70" x2="280" y2="70"/></g>
-      <rect x="70" y="118" width="54" height="52" rx="6" fill="rgba(255,255,255,.28)"/>
-      <rect x="176" y="62" width="54" height="108" rx="6" fill="#5FC4D0"/>
-      <text x="97" y="108" text-anchor="middle" fill="#fff" font-family="Plus Jakarta Sans,Inter,sans-serif" font-weight="800" font-size="20">21%</text>
-      <text x="203" y="52" text-anchor="middle" fill="#fff" font-family="Plus Jakarta Sans,Inter,sans-serif" font-weight="800" font-size="24">52%</text>
-      <text x="97" y="190" text-anchor="middle" fill="rgba(255,255,255,.8)" font-family="Inter,sans-serif" font-size="12">EUA</text>
-      <text x="203" y="190" text-anchor="middle" fill="rgba(255,255,255,.8)" font-family="Inter,sans-serif" font-size="12">Brasil</text>
-    </svg><span style="position:absolute;left:20px;bottom:14px;font-size:11px;color:rgba(255,255,255,.7)">Pequenos negócios que usaram IA · Sebrae 2026</span></div>
+      <rect x="70" y="62" width="54" height="108" rx="6" fill="rgba(255,255,255,.28)"/>
+      <rect x="176" y="89" width="54" height="81" rx="6" fill="#5FC4D0"/>
+      <text x="97" y="52" text-anchor="middle" fill="#fff" font-family="Plus Jakarta Sans,Inter,sans-serif" font-weight="800" font-size="20">1,52 mi</text>
+      <text x="203" y="79" text-anchor="middle" fill="#fff" font-family="Plus Jakarta Sans,Inter,sans-serif" font-weight="800" font-size="24">1,13 mi</text>
+      <text x="97" y="190" text-anchor="middle" fill="rgba(255,255,255,.8)" font-family="Inter,sans-serif" font-size="12">Jan-ago 2025</text>
+      <text x="203" y="190" text-anchor="middle" fill="rgba(255,255,255,.8)" font-family="Inter,sans-serif" font-size="12">Jan-ago 2026</text>
+    </svg><span style="position:absolute;left:20px;bottom:14px;font-size:11px;color:rgba(255,255,255,.7)">Vagas formais criadas no ano · Novo Caged/MTE</span></div>
     <div class="body">${tagHTML(f.cat)}<h3>${esc(f.title)}</h3><p>${esc(f.dek)}</p>
     <span class="meta">Wildson Rodrigues Leal · ${f.date} · ${f.read} min de leitura</span><span class="readmore">Ler artigo completo →</span></div></button>`;
   const cats=["todos",...new Set(POSTS.map(p=>p.cat))];
