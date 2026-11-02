@@ -212,7 +212,7 @@ footer a{color:var(--teal)}
     <nav>
       <a class="nl" href="#" data-home>Artigos</a>
       <a class="nl" href="#ferramentas">Ferramentas</a>
-      <a class="btn" href="https://www.produtivagestao.com.br/#contato" target="_blank" rel="noopener">Diagnóstico gratuito →</a>
+      <a class="btn" href="https://app.produtivagestao.com.br/register?experience=plg" target="_blank" rel="noopener">Diagnóstico gratuito →</a>
     </nav>
   </div>
 </header>
@@ -285,7 +285,7 @@ footer a{color:var(--teal)}
             <div class="hl" style="grid-column:1/-1"><span>Economia anual num cenário de 40% menos retrabalho</span><b id="r-save">R$ 0</b></div>
           </div>
           <p class="note">Valores de exemplo. Ajuste com os números da sua empresa. Estimativa ilustrativa, não substitui um diagnóstico.</p>
-          <a class="btn" style="margin-top:16px" href="https://www.produtivagestao.com.br/#contato" target="_blank" rel="noopener">Validar esse número no diagnóstico gratuito →</a>
+          <a class="btn" style="margin-top:16px" href="https://app.produtivagestao.com.br/register?experience=plg" target="_blank" rel="noopener">Validar esse número no diagnóstico gratuito →</a>
         </div>
       </div>
     </div>
@@ -301,7 +301,7 @@ footer a{color:var(--teal)}
       <h2>Leu, fez sentido, e agora? Veja como isso fica na sua empresa.</h2>
       <p>Em 30 minutos mostramos como sua operação ficaria com consultoria contínua e agentes de IA trabalhando 24/7, usando um caso real do seu segmento.</p>
       <div class="actions">
-        <a class="btn coral" href="https://www.produtivagestao.com.br/#contato" target="_blank" rel="noopener">Agendar diagnóstico gratuito →</a>
+        <a class="btn coral" href="https://app.produtivagestao.com.br/register?experience=plg" target="_blank" rel="noopener">Agendar diagnóstico gratuito →</a>
         <a class="btn ghost" href="https://wa.me/5527999291352?text=Ol%C3%A1!%20Vim%20pelo%20blog%20e%20quero%20conversar%20sobre%20um%20diagn%C3%B3stico." target="_blank" rel="noopener">Falar no WhatsApp</a>
       </div>
     </div>
@@ -317,12 +317,13 @@ footer a{color:var(--teal)}
 <footer>
   <div class="wrap">
     <div><b style="color:#fff;font-family:var(--display)">Produtiva Gestão</b><br>Consultoria em Gestão, Produtividade, Qualidade e Desenvolvimento de Pessoas · Cariacica, ES</div>
-    <div>contato@produtivagestao.com.br · (27) 99929-1352<br><a href="https://www.produtivagestao.com.br" target="_blank" rel="noopener">produtivagestao.com.br</a> · <a href="https://instagram.com/produtivagestao" target="_blank" rel="noopener">@produtivagestao</a></div>
+    <div>contato@produtivagestao.com.br · (27) 99929-1352<br><a href="https://app.produtivagestao.com.br/register?experience=plg" target="_blank" rel="noopener">produtivagestao.com.br</a> · <a href="https://instagram.com/produtivagestao" target="_blank" rel="noopener">@produtivagestao</a></div>
   </div>
 </footer>
 
 <script>
 const SITE="https://www.produtivagestao.com.br";
+const REG="https://app.produtivagestao.com.br/register?experience=plg";
 const WA=t=>"https://wa.me/5527999291352?text="+encodeURIComponent(t);
 const CATS={ia:"IA & Tecnologia",qual:"Qualidade & ISO",pessoas:"Pessoas",mercado:"Mercado & Economia",processos:"Processos"};
 
@@ -476,7 +477,7 @@ function renderPost(slug){
       <div class="keybox">${p.key.map(k=>`<div><b>${k[0]}</b><span>${k[1]}</span></div>`).join("")}</div>
       ${p.body}
       <div class="cta-inline"><div class="eyebrow">Diagnóstico gratuito</div><h3>Quer saber como isso se aplica ao seu negócio?</h3><p>Em até 7 dias mapeamos processos, indicadores e gargalos da sua empresa e mostramos por onde começar.</p>
-        <div class="row"><a class="btn coral" href="${SITE}/#contato" target="_blank" rel="noopener">Agendar diagnóstico →</a><a class="btn ghost" href="${WA("Olá! Li o artigo \""+p.title+"\" no blog e quero conversar.")}" target="_blank" rel="noopener">Comentar no WhatsApp</a></div></div>
+        <div class="row"><a class="btn coral" href="${REG}" target="_blank" rel="noopener">Agendar diagnóstico →</a><a class="btn ghost" href="${WA("Olá! Li o artigo \""+p.title+"\" no blog e quero conversar.")}" target="_blank" rel="noopener">Comentar no WhatsApp</a></div></div>
       <div class="share"><span>Compartilhe:</span><a href="https://wa.me/?text=${encodeURIComponent(shareTxt)}" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(SITE)}" target="_blank" rel="noopener">LinkedIn</a><button data-copy="${esc(shareTxt)}">Copiar texto</button></div>
       <div class="sources"><h4>Fontes</h4><ul>${p.sources.map(s=>`<li><a href="${s[1]}" target="_blank" rel="noopener">${esc(s[0])}</a></li>`).join("")}</ul></div>
     </div>
